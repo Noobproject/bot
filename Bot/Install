@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+echo -e "\E[44;1;37m     INSTALACAO BOT TESTE SSH     \E[0m"
+echo -e "\nINSTALANDO AGUARDE...."
+apt update -y > /dev/null 2>&1 && apt install unzip at jq curl -y > /dev/null 2>&1
+mkdir $HOME/BOT
+cd $HOME/BOT && wget rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- https://raw.githubusercontent.com/Noobproject/bot/main/Bot/botteste.zip)
+unzip botteste.zip > /dev/null 2>&1 && rm botteste.zip > /dev/null 2>&1
+chmod +x $(ls)
+mv botteste /bin/botteste
+clear && echo -e "INSTALADO COM SUCESSO !\nPARA ATIVAR EXECULTE O COMANDO botteste"
+cd $HOME && rm inst-botteste > /dev/null 2>&1
